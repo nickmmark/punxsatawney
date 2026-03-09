@@ -1,5 +1,11 @@
 # punxsatawney
 
+## Methods
+I explored whether Punxsutawney Phil's annual Groundhog Day predictions -shadow (more winter) or no shadow (early spring) — contain statistically significant meteorological signal when evaluated against empirical Pennsylvania climate data.
+
+I analyzed all of Phil's predictions from 1900 to present (n=124 because Phil did not make a prediction in 1943 or 1943 "War clouds have blacked out parts of the shadow.") Primary source: [groundhog.org](https://www.groundhog.org/groundhog-day/history-past-predictions/)
+I used several definitions of "Early spring" including:
+
 
 ## Results
 
@@ -11,9 +17,9 @@
 | First Warm Day ≥50°F | 124 | 84.7% | 0.710 | 93.9% | 48.0% | 87.7% | 0.907 | 0.478 | <0.00001 | *** |
 | Composite            | 124 | 73.4% | 0.628 | 94.0% | 31.7% | 73.6% | 0.825 | 0.343 | <0.00001 | *** |
 
-## Doing the analysis
+## Running the analysis
 ### Three ways to run the analysis
-#### Uses embedded dataset (no files needed)
+#### Use embedded dataset (no files needed)
 ```
 python punxsutawney_phil_analysis.py
 ```
