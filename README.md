@@ -19,6 +19,13 @@ Punxsutawney Phil is less a meteorologist than a teaching tool. By subjecting hi
 
 ## Methods
 I explored whether Punxsutawney Phil's annual Groundhog Day predictions -shadow (more winter) or no shadow (early spring) — contain statistically significant meteorological signal when evaluated against empirical Pennsylvania climate data.
+I calculated the sensitivity, specificity, positive predictive value, F1 score, area under the curve for a received operating characteristic, and overall accuracy.
+
+Significance testing was performed comparing Phil's predictions to chance (50% probability of getting it right; e.g. a coin flip), using a [Bernoulli trial methodology](https://en.wikipedia.org/wiki/Bernoulli_trial).
+
+I also used chi-squared.
+
+
 
 ## Data Sources
 ### Phil's predictions
@@ -56,7 +63,10 @@ All four endpoints use Pennsylvania statewide data to maintain geographic releva
 
 
 ## Results
+#### Confusion Matrix
 
+
+#### Performance Metrics
 | Definition           | N   | Acc   | AUC   | Sens  | Spec  | PPV   | F1    | MCC   | p(binom) |     |
 |----------------------|-----|-------|-------|-------|-------|-------|-------|-------|----------|-----|
 | CPC Classification   | 124 | 67.7% | 0.623 | 95.8% | 28.8% | 65.1% | 0.775 | 0.346 | 0.00005  | *** |
@@ -65,6 +75,7 @@ All four endpoints use Pennsylvania statewide data to maintain geographic releva
 | First Warm Day ≥50°F | 124 | 84.7% | 0.710 | 93.9% | 48.0% | 87.7% | 0.907 | 0.478 | <0.00001 | *** |
 | Composite            | 124 | 73.4% | 0.628 | 94.0% | 31.7% | 73.6% | 0.825 | 0.343 | <0.00001 | *** |
 
+####  Figures
 ![](https://github.com/nickmmark/punxsatawney/blob/main/plots/bars.png?raw=true)
 
 
