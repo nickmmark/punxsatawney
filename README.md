@@ -63,6 +63,8 @@ All four endpoints use Pennsylvania statewide data to maintain geographic releva
 | First Warm Day ≥50°F | 124 | 84.7% | 0.710 | 93.9% | 48.0% | 87.7% | 0.907 | 0.478 | <0.00001 | *** |
 | Composite            | 124 | 73.4% | 0.628 | 94.0% | 31.7% | 73.6% | 0.825 | 0.343 | <0.00001 | *** |
 
+![](https://github.com/nickmmark/punxsatawney/blob/main/plots/bars.png?raw=true)
+
 
 ## Running the analysis
 ### Three ways to run the analysis
