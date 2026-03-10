@@ -1,6 +1,6 @@
 # punxsatawney
 
-Every February 2nd, a groundhog known as Punxsutawney Phil emerges in Pennsylvania to render a meteorological verdict: if he sees his shadow, legend says winter will persist for six more weeks; if not, spring will arrive early. The ritual is charming folklore (and a good movie), but it also offers a surprisingly useful framework for thinking about prediction in medicine.
+Every February 2nd, a groundhog known as Punxsutawney Phil emerges in Pennsylvania to render a meteorological verdict: if he sees his shadow, legend says winter will persist for six more weeks; if not, spring will arrive early. The ritual is charming folklore (and a good [movie](https://en.wikipedia.org/wiki/Groundhog_Day_(film))), but it also offers a surprisingly useful framework for thinking about prediction in medicine.
 
 At its core, Phil’s prediction is a binary diagnostic test. The “test result” is whether Phil sees his shadow. The “outcome” is whether the following weeks resemble winter or spring. When framed this way, Phil can be evaluated with the same tools we use for clinical prediction models: sensitivity, specificity, PPV, calibration, and ROC curves. Does a shadow actually correlate with colder weather? How often does Phil correctly predict early spring? Is he better than chance—or better than a trivial baseline, like always predicting six more weeks of winter?
 
