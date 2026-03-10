@@ -14,6 +14,8 @@ Finally, rigorous evaluation reminds us that prediction is probability not proph
 
 Punxsutawney Phil is less a meteorologist than a teaching tool. By subjecting his shadow-based forecast to the same statistical scrutiny we apply to clinical prediction models, we are reminded that the essential question in both weather and medicine is the same: does the signal truly predict the outcome, or are we simply seeing shadows?
 
+![](https://upload.wikimedia.org/wikipedia/commons/6/6e/Punxsutawney_Phil_2018_%28cropped%29.jpg?_=20190711105238)
+
 
 ## Methods
 I explored whether Punxsutawney Phil's annual Groundhog Day predictions -shadow (more winter) or no shadow (early spring) — contain statistically significant meteorological signal when evaluated against empirical Pennsylvania climate data.
@@ -90,3 +92,7 @@ python punxsutawney_phil_analysis.py --csv data.csv --outdir ./results --window 
 * decadal_heatmap.png — decade-by-decade performance grid
 * bias_chart.png — Phil's shadow rate vs. actual winter rate over time
 * yearly_strip.png — full year-by-year outcome visualization
+
+### References
+
+
