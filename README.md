@@ -6,7 +6,7 @@ At its core, Phil’s prediction is a binary diagnostic test. The “test result
 
 This exercise mirrors the challenges we face when evaluating medical predictors. In critical care we constantly rely on prognosticators: labs, imaging, risk scores, etc. A lactate level predicts mortality; a Wells score predicts pulmonary embolism; an echocardiographic finding like VTI predicts shock physiology. In each case, the real question is the same as Phil’s: how good is the predictor when tested _rigorously_?
 
-Two lessons emerge. First, prediction must be benchmarked against a clear ground truth. For Phil, that requires defining “spring” meteorologically and rigorously. Medicine faces the same challenge when defining outcomes like sepsis, ARDS, or neurological recovery. The wrong definition can change the prediction.
+Two lessons emerge. First, prediction must be benchmarked against a clear ground truth. For Phil, that requires defining “spring” meteorologically and rigorously. Medicine faces the same challenge when defining outcomes for conditions like sepsis, ARDS, or neurological events. The wrong definition can change the prediction.
 
 Second, a predictor must outperform simpler alternatives. In many cases, naïve baselines perform surprisingly well. If winter conditions persist most years through mid-March, then _always_ predicting “six more weeks of winter” might achieve higher accuracy. Many medical prediction rules fail this same test: they sound sophisticated but add little information beyond basic clinical judgment or prevalence.
 
