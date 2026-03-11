@@ -18,7 +18,7 @@ Punxsutawney Phil is less a meteorologist than a teaching tool. By subjecting hi
 
 
 ## Methods
-I explored whether Punxsutawney Phil's annual Groundhog Day predictions -shadow (more winter) or no shadow (early spring) — contain statistically significant meteorological signal when evaluated against empirical Pennsylvania climate data.
+I explored whether Punxsutawney Phil's annual Groundhog Day predictions - shadow (more winter) or no shadow (early spring) - contain statistically significant meteorological signal when evaluated against empirical Pennsylvania climate data.
 I calculated the sensitivity, specificity, positive predictive value, F1 score, area under the curve for a received operating characteristic, and overall accuracy.
 
 Significance testing was performed comparing Phil's predictions to chance (50% probability of getting it right; e.g. a coin flip), using a [Bernoulli trial methodology](https://en.wikipedia.org/wiki/Bernoulli_trial).
