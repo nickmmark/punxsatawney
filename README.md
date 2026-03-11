@@ -39,24 +39,24 @@ All four endpoints use Pennsylvania statewide data to maintain geographic releva
 #### NOAA CPC Statewide Seasonal Classification
 * The combined February–March mean temperature for Pennsylvania was ranked against the 1901–2000 baseline (long-record normal, preferred for pre-modern era coverage).
 * Years classified as "Above Normal" (top tercile) = 0 (early spring); "Below Normal" or "Near Normal" = 1 (more winter).
-* This mirrors the methodology used by NOAA's own Grading the Groundhogs analysis.
+* This mirrors the methodology used by NOAA's own [Grading the Groundhogs analysis](https://www.noaa.gov/heritage/stories/grading-groundhogs).
 * Source: NOAA NCEI Climate at a Glance — Pennsylvania Statewide Temperature
 
 #### Temperature Anomaly vs. 30-Year Normal
 * The mean temperature from February 2–March 15 was compared to the 1901–2000 climatological mean (~37.5°F for western PA). A positive anomaly (warmer than normal) = 0; zero or negative anomaly = 1.
 * This is a continuous rather than tercile-based measure, making it more sensitive to marginal years.
 * This is also potentially affected by non-stationarity in the data (e.g. global climate change...)
-* Source: NOAA NCEI Climate at a Glance — Pennsylvania Statewide Temperature; NOAA U.S. Climate Normals 1991–2020
+* Source: NOAA NCEI Climate at a Glance — Pennsylvania Statewide Temperature; [NOAA U.S. Climate Normals 1991–2020](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals)
 
 #### Heating Degree Days (HDD) Accumulation
 * Heating Degree Days (HDD) measures how much and for how long the outside air temperature falls below a standard comfort level, typically 65°F. It is used to measure how much heating to necessary to maintain a comfortable temperature inside. 
 * Accumulated HDD (base 65°F) for the February 2–March 15 window compared to the climatological long-period mean for Pennsylvania. HDD above the historical mean = 1 (more heating demand = colder = more winter); below = 0. HDD is a standard energy and climate metric that integrates the full temperature distribution rather than relying on the mean alone, and thus captures cold extremes more sensitively than mean anomaly.
-* Source: NOAA NCEI Climate at a Glance — Heating Degree Days, Pennsylvania; NOAA Climate Normals
+* Source: NOAA NCEI Climate at a Glance — Heating Degree Days, Pennsylvania; [NOAA Climate Normals](https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals)
 
 #### First Sustained Warm Day (≥50°F for 3+ Consecutive Days)
 * This definition defines "early spring" as the arrival of the first sustained warm spell in the post-Groundhog Day window. A run of ≥3 consecutive days with maximum temperature ≥50°F occurring before March 1st = 0 (early spring); first such run occurring on or after March 1, or no qualifying run before April 1, = 1 (more winter). This threshold was chosen to reflect the folk-meteorological intuition underlying the tradition — a brief warm streak that would colloquially signal spring's arrival.
 * Of the four definitions, arguably this one most directly aligns with the traditional folklore of Phil's predictions.
-* Source: NOAA GHCN-Daily station data — western Pennsylvania composite; primary station USW00094823 (Johnstown/Cambria County area) supplemented with nearby stations for gap-filling.
+* Source: NOAA GHCN-Daily station data — western Pennsylvania composite; primary station USW00094823 (Johnstown/Cambria County area) supplemented with nearby stations for gap-filling.(https://www.ncdc.noaa.gov/cdo-web/datasets/GHCND/stations/GHCND:USW00094823/detail)
 
 #### Composite (Majority Vote)
 * A derived variable: coded 1 if ≥3 of the four definitions independently classify the year as "more winter," 0 otherwise. This provides a consensus ground truth less sensitive to any single definition's classification errors.
@@ -105,5 +105,4 @@ python punxsutawney_phil_analysis.py --csv data.csv --outdir ./results --window 
 * yearly_strip.png — full year-by-year outcome visualization
 
 ### References
-
-
+* [Grading the Groundhog](https://www.noaa.gov/heritage/stories/grading-groundhogs), NOAA 2025
