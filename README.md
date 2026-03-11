@@ -78,6 +78,7 @@ All four endpoints use Pennsylvania statewide data to maintain geographic releva
 ####  Figures
 ![](https://github.com/nickmmark/punxsatawney/blob/main/plots/bars.png?raw=true)
 
+![](https://github.com/nickmmark/punxsatawney/blob/main/plots/strip.png?raw=true)
 
 ## Running the analysis
 ### Three ways to run the analysis
